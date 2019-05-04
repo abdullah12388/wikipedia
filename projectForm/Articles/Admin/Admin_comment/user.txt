@@ -1,0 +1,6 @@
+Art~user~davinshy.txt:Your Article is accepted.
+Maths~user~algorithm.txt:Your Article is accepted.
+Economy~user~dollar.txt:Your Article is accepted.
+Physics~user~newten.txt:Your Article is accepted.
+Sport~user~a.txt:Your Article is accepted.
+Art~user~davinshy.txt:4frgvyhby

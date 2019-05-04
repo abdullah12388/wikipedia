@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="wiki">
+  <ClassDiagramComponents>
+    <Class name="politics" package="" visibility="public" xPosition="813.0" yPosition="534.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="flsafa" package="" visibility="public" xPosition="642.0" yPosition="607.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="economy" package="" visibility="public" xPosition="343.0" yPosition="733.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="physics" package="" visibility="public" xPosition="721.0" yPosition="402.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="art" package="" visibility="public" xPosition="218.0" yPosition="402.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="sport" package="" visibility="public" xPosition="437.0" yPosition="386.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="chemistry" package="" visibility="public" xPosition="159.0" yPosition="689.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="maths" package="" visibility="public" xPosition="72.0" yPosition="553.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="biology" package="" visibility="public" xPosition="14.0" yPosition="419.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="stuff" package="" visibility="public" xPosition="1249.0" yPosition="441.0">
+      <Fields>
+        <Field name="fn" type="string" visibility="private"/>
+        <Field name="ln" type="string" visibility="private"/>
+        <Field name="id" type="string" visibility="private"/>
+        <Field name="mob" type="string" visibility="private"/>
+        <Field name="address" type="string" visibility="private"/>
+        <Field name="e_mail" type="string" visibility="private"/>
+        <Field name="birthday" type="string" visibility="private"/>
+        <Field name="bill_counter" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="singin" returnType="void" visibility="public"/>
+        <Method name="singout" returnType="void" visibility="public"/>
+        <Method name="singup" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="admin" package="" visibility="public" xPosition="1011.0" yPosition="774.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="show_reviewed_articles" returnType="void" visibility="public"/>
+        <Method name="accept_article" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="manager" package="" visibility="public" xPosition="990.0" yPosition="607.0">
+      <Fields>
+        <Field name="dept" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="show_new_article" returnType="void" visibility="public"/>
+        <Method name="comment" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="user" package="" visibility="public" xPosition="1249.0" yPosition="784.0">
+      <Fields>
+        <Field name="payment" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="check_payment" returnType="void" visibility="public"/>
+        <Method name="show_reply" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="article" package="" visibility="public" xPosition="721.0" yPosition="715.0">
+      <Fields>
+        <Field name="name" type="string" visibility="private"/>
+        <Field name="content" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="set_name" returnType="void" visibility="public"/>
+        <Method name="set_content" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="search" package="" visibility="public" xPosition="484.0" yPosition="874.0">
+      <Fields>
+        <Field name="path" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="search_article" returnType="void" visibility="public"/>
+        <Method name="search_user" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="delete" package="" visibility="public" xPosition="244.0" yPosition="884.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="delete_user" returnType="void" visibility="public"/>
+        <Method name="delete_article" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="payment" package="" visibility="public" xPosition="1211.0" yPosition="1014.0">
+      <Fields>
+        <Field name="check_f_p" type="string" visibility="private"/>
+        <Field name="check_c_g" type="string" visibility="private"/>
+        <Field name="card_name" type="string" visibility="private"/>
+        <Field name="cridit_card_number" type="string" visibility="private"/>
+        <Field name="gift_card_number" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="check_free_premium" returnType="void" visibility="public"/>
+        <Method name="credit_debit_card" returnType="void" visibility="public"/>
+        <Method name="gift_card" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="update" package="" visibility="public" xPosition="1011.0" yPosition="453.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="update_user" returnType="void" visibility="public"/>
+        <Method name="update_manager" returnType="void" visibility="public"/>
+        <Method name="update_admin" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ratting" package="" visibility="public" xPosition="711.0" yPosition="951.0">
+      <Fields>
+        <Field name="rate" type="float" visibility="private"/>
+        <Field name="rate_comm" type="String" visibility="private"/>
+        <Field name="rate_count" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calc_rate" returnType="void" visibility="public"/>
+        <Method name="saving_rate" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="dept" package="" visibility="public" xPosition="402.0" yPosition="526.0">
+      <Methods>
+        <Method name="show" returnType="void" visibility="public"/>
+        <Method name="add" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="flsafa" target="dept"/>
+    <IsRelation name="is" source="manager" target="stuff"/>
+    <IsRelation name="is" source="update" target="stuff"/>
+    <UseRelation name="a" source="dept" target="search" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="biology" target="dept"/>
+    <IsRelation name="is" source="delete" target="search"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="economy" target="dept"/>
+    <UseRelation name="a" source="dept" target="ratting" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="physics" target="dept"/>
+    <UseRelation name="use" source="dept" target="article" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="obj" source="user" target="ratting" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="sport" target="dept"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="chemistry" target="dept"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="maths" target="dept"/>
+    <HasRelation name="a" source="user" target="payment" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="politics" target="dept"/>
+    <IsRelation name="is" source="user" target="stuff"/>
+    <IsRelation name="is" source="admin" target="stuff"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="art" target="dept"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

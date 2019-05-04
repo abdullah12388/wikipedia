@@ -1,0 +1,9 @@
+art@gmail.com$manager$
+biology@gmail.com$manager$
+maths@gmail.com$manager$
+chemistry@gmail.com$manager$
+economy@gmail.com$manager$
+philosophy@gmail.com$manager$
+politics@gmail.com$manager$
+physics@gmail.com$manager$
+sport@gmail.com$manager$

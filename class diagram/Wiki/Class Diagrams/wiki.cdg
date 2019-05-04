@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="wiki">
+  <ClassDiagramComponents>
+    <Class name="sign" package="" visibility="public" xPosition="50.0" yPosition="41.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="pasword" type="String" visibility="private"/>
+        <Field name="gender" type="String" visibility="private"/>
+        <Field name="age" type="String" visibility="private"/>
+        <Field name="bill" type="String" visibility="private"/>
+        <Field name="blii_counter" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="admin" package="" visibility="public" xPosition="26.0" yPosition="294.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="admin_sign" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="user" package="" visibility="public" xPosition="38.0" yPosition="439.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="user_sign_up" returnType="void" visibility="public"/>
+        <Method name="user_sign_in" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="dep_manager" package="" visibility="public" xPosition="26.0" yPosition="602.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dep_sign" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="get_article" package="" visibility="public" xPosition="465.0" yPosition="323.0">
+      <Fields>
+        <Field name="articlr" type="String" visibility="private"/>
+        <Field name="ar_address" type="String" visibility="private"/>
+        <Field name="new_bill_count" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="get_article" returnType="void" visibility="public"/>
+        <Method name="tell_admin" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="payment" package="" visibility="public" xPosition="75.0" yPosition="756.0">
+      <Fields>
+        <Field name="chek_f_p" type="String" visibility="private"/>
+        <Field name="check_C_G" type="String" visibility="private"/>
+        <Field name="Card_Name" type="String" visibility="private"/>
+        <Field name="Cridit_Card_Number" type="String" visibility="private"/>
+        <Field name="Gift_Card_Number" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Check_Free_premium" returnType="void" visibility="public"/>
+        <Method name="Credit_Debit_Card" returnType="void" visibility="public"/>
+        <Method name="Gift_Card" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Out" package="" visibility="public" xPosition="444.0" yPosition="731.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="saving" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="search" package="" visibility="public" xPosition="482.0" yPosition="22.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="search_article" returnType="void" visibility="public"/>
+        <Method name="search_user" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="delete" package="" visibility="public" xPosition="715.0" yPosition="41.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="delete_user" returnType="void" visibility="public"/>
+        <Method name="delete_article" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="update" package="" visibility="public" xPosition="286.0" yPosition="31.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="user_update" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="rate" package="" visibility="public" xPosition="847.0" yPosition="183.0">
+      <Fields>
+        <Field name="rate" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="show_article" returnType="void" visibility="public"/>
+        <Method name="rate_article" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="update" target="sign"/>
+    <HasRelation name="a" source="search" target="user" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="admin" target="sign"/>
+    <IsRelation name="is" source="search" target="sign"/>
+    <HasRelation name="a" source="update" target="user" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="search" target="get_article" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="delete" target="user" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="z" source="Out" target="user" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="delete" target="sign"/>
+    <HasRelation name="z" source="Out" target="rate" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="z" source="Out" target="update" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="rate" target="get_article" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="delete" target="get_article" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="z" source="Out" target="get_article" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="delete" target="search" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="z" source="Out" target="delete" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="user" target="sign"/>
+    <IsRelation name="is" source="dep_manager" target="sign"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
